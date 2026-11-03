@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QOS ISEAS JV</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" type="image/icon" href="IMG/QI LOGO.png">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet">
+</head>
+
+<body>
+    
+<!--HEADER-->
+<header class="hero">
+
+    <!--NAVIGATION BAR-->
+    <nav class="navbar">
+
+        <div class="logo">
+            <a href="index.html">
+            <img src="IMG/QI LOGO.png">
+            </a>
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="expertise.html">Our Expertise</a></li>
+            <li><a href="safety.html">Safety & Quality</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+
+        <span class="material-symbols-outlined menu-icon" id="menuIcon"
+        onclick="toggleMenu()">
+            menu
+        </span>
+    </nav>
+
+    <!--HERO-->
+    <div class="hero-content">
+        <h1>Combining Advanced Inspection with Subsea Expertise to Deliver End-to-End Solutions</h1>
+        <p>QOS ISEAS JV combines the strengths of QOS Sdn. Bhd. and Integrated Subsea Engineering & Services LLC (ISEAS) to 
+            deliver fully integrated solutions across the Oil and Gas and marine sectors, anchored by a shared commitment to safety, quality, and operational excellence.
+        </p>
+        <a href="expertise.html" class="hero-btn">Our Services</a>
+    </div>
+
+</header>
+
+<!--WHO WE ARE-->
+<section class="who-we-are reveal">
+
+    <div class="who-image">
+        <img src="IMG/QI LOGO.png" alt="QOS ISEAS JV">
+    </div>
+
+    <div class="who-content">
+        <h2>Who We Are</h2>
+        <div class="divider"></div>
+
+        <p>
+            QOS ISEAS JV is a strategic collaboration between
+            QOS Sdn. Bhd. and Integrated Subsea Engineering &
+            Services LLC (ISEAS), bringing together extensive
+            expertise in asset integrity, inspection, subsea
+            engineering, and offshore operations.
+        </p>
+
+        <p>
+            By combining advanced technologies, experienced
+            personnel, and a commitment to safety and quality,
+            we deliver integrated solutions that support the
+            oil and gas, marine, and industrial sectors from
+            surface to seabed.
+        </p>
+
+        <a href="about.html" class="who-btn">Learn More</a>
+
+    </div>
+</section>
+
+<!--CAPABILITIES-->
+<section class="capabilities reveal">
+
+    <div class="section-header">
+        <h2>Our Capabilities</h2>
+        <div class="divider"></div>
+    </div>
+
+    <div class="capabilities-container">
+        <div class="capabilities-grid">
+
+            <div class="capability-card">
+                <h3>Full-Scope Asset Integrity</h3>
+                <p>
+                    Delivering advanced inspection and integrity management solutions to maintain performance and extend asset life.
+                </p>
+            </div>
+
+            <div class="capability-card">
+                <h3>Integrated Mechanical Solutions</h3>
+                <p>
+                    From fabrication to pipeline services, ensuring precision execution across critical infrastructure.
+                </p>
+            </div>
+
+            <div class="capability-card">
+                <h3>Subsea Operations</h3>
+                <p>
+                    Providing safe, efficient, and technically advanced underwater services in demanding offshore environments.
+                </p>
+            </div>
+
+            <div class="capability-card">
+                <h3>Advanced Offshore Technologies</h3>
+                <p>
+                    Utilizing ROVs and specialized equipment to deliver accurate, high-performance subsea solutions.
+                </p>
+            </div>
+
+        </div>
+
+        <!--RIGHT SIDE IMAGE-->
+        <div class="capabilities-images">
+            <img src="IMG/DIV1.jpg">
+        </div>
+
+    </div>
+</section>
+
+<!--FOOTER-->
+<footer class="footer">
+
+    <!--BG VIDEO-->
+    <video autoplay muted loop playsinline class="footer-video">
+        <source src="IMG/FOOTER.mp4" type="video/mp4">
+    </video>
+
+    <!--OVERLAY-->
+    <div class="footer-overlay"></div>
+
+    <!--FOOTER CONTENT-->
+    <div class="footer-container">
+
+        <!--COLUMN 1: LOGO-->
+        <div class="footer-logo">
+            <img src="IMG/QI LOGO.png" alt="Company Logo">
+        </div>
+        
+        <!--COLUMN 2: CONTACT INFO-->
+            <div class="footer-contact">
+                <p>
+                    <span class="material-symbols-outlined">
+                        location_on
+                    </span>
+
+                    <span>
+                        Block A, Unit 8,<br>
+                        Simpang 288, Jalan Rasau,<br>
+                        Sungai 7, Tanjong Rasau,<br>
+                        Kuala Belait, KA3331. 
+                    </span>
+                        
+                </p>
+
+                <p>
+                    <span class="material-symbols-outlined">
+                        mail
+                    </span>
+
+                    <span>
+                        enquiry@qosiseas.com
+                    </span>
+                </p>
+
+                <p>
+                    <span class="material-symbols-outlined">
+                        link
+                    </span>
+
+                    <a href="#">
+                        QOS ISEAS JV
+                    </a>
+                </p>
+            </div>
+       
+        <!--COLUMN 3: QUICK LINKS-->
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="expertise.html">Our Expertise</a></li>
+                <li><a href="safety.html">Safety & Quality</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!--COPYRIGHT-->
+    <div class="footer-bottom">
+        <p>
+           © 2026 QOS ISEAS JV. All Rights Reserved. 
+        </p>
+    </div>
+
+</footer>
+
+<script>
+        function toggleMenu() {
+            const navLinks = document.getElementById("navLinks");
+            const menuIcon = document.getElementById("menuIcon");
+
+            navLinks.classList.toggle("active");
+
+            if (navLinks.classList.contains("active")) {
+                menuIcon.textContent = "close";
+            } else {
+                menuIcon.textContent = "menu";
+            }
+        }
+</script>
+
+<script>
+const reveals = document.querySelectorAll(".reveal");
+
+window.addEventListener("scroll", () => {
+    reveals.forEach((element) => {
+        const top = element.getBoundingClientRect().top;
+
+        if(top < window.innerHeight - 100) {
+            element.classList.add("active");
+        }
+    });
+});
+
+</script>
+
+
+</body>
+</html>
