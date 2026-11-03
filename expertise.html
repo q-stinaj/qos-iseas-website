@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Expertise</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/expertise.css">
+    <link rel="icon" type="image/icon" href="IMG/QI LOGO.png">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+</head>
+<body>
+    
+<!--NAVIGATION BAR-->
+<nav class="navbar">
+
+        <div class="logo">
+            <a href="index.html">
+            <img src="IMG/QI LOGO.png">
+            </a>
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="expertise.html">Our Expertise</a></li>
+            <li><a href="safety.html">Safety & Quality</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+
+        <span class="material-symbols-outlined menu-icon" id="menuIcon"
+        onclick="toggleMenu()">
+            menu
+        </span>
+</nav>
+
+<!--BANNER-->
+<section class="expertise-banner">
+    <div class="expertise-banner-content">
+        <h1>Our Expertise</h1>
+        
+        <p>Providing integrated topside and subsea IRM services with a commitment to technical excellence and operational reliability.</p>
+    </div>
+</section>
+
+<!--EXPERTISE INTRO-->
+<section class="expertise-intro reveal">
+    <div class="intro-overlay"></div>
+
+    <div class="intro-content">
+        <p>QOS Sdn. Bhd. and ISEAS LLC each bring deep domain expertise built through years of delivering complex projects across the Oil and Gas and marine sectors. While QOS focuses on surface-level inspection, 
+            integrity, and mechanical services, ISEAS specializes in subsea operations and underwater engineering solutions.
+            Together, these capabilities provide a seamless, end-to-end approach that supports assets both above and underwater, ensuring safety, reliability, and operational efficiency throughout.
+        </p>
+    </div>
+</section>
+
+<!--SERVICES CAROUSEL-->
+<section class="services reveal">
+
+    <div class="section-title">
+        <h2>Services</h2>
+        <div class="divider"></div>
+    </div>
+
+    <div class="services-slider">
+
+        <a href="SERVICES/divingservices.html" class="services-card service-1">
+            <h3>Diving Services</h3>
+        </a>
+
+        <a href="SERVICES/divingeqt.html" class="services-card service-2">
+            <h3>Diving Equipment</h3>
+        </a>
+
+        <a href="SERVICES/rov.html" class="services-card service-3">
+            <h3>Remotely Operated Vehicle (ROV)</h3>
+        </a>
+
+        <a href="SERVICES/conventionalNDT.html" class="services-card service-4">
+            <h3>Conventional NDT Inspection</h3>
+        </a>
+
+        <a href="SERVICES/advancedNDT.html" class="services-card service-5">
+            <h3>Advanced NDT Inspection</h3>
+        </a>
+
+        <a href="SERVICES/mechanicalservices.html" class="services-card service-6">
+            <h3>Mechanical Services</h3>
+        </a>
+
+    </div>
+</section>
+
+
+<!--FOOTER-->
+<footer class="footer">
+
+    <!--BG VIDEO-->
+    <video autoplay muted loop playsinline class="footer-video">
+        <source src="IMG/FOOTER.mp4" type="video/mp4">
+    </video>
+
+    <!--OVERLAY-->
+    <div class="footer-overlay"></div>
+
+    <!--FOOTER CONTENT-->
+    <div class="footer-container">
+
+        <!--COLUMN 1: LOGO-->
+        <div class="footer-logo">
+            <img src="IMG/QI LOGO.png" alt="Company Logo">
+        </div>
+        
+        <!--COLUMN 2: CONTACT INFO-->
+            <div class="footer-contact">
+                <p>
+                    <span class="material-symbols-outlined">
+                        location_on
+                    </span>
+
+                    <span>
+                        Block A, Unit 8,<br>
+                        Simpang 288, Jalan Rasau,<br>
+                        Sungai 7, Tanjong Rasau,<br>
+                        Kuala Belait, KA3331. 
+                    </span>
+                        
+                </p>
+
+                <p>
+                    <span class="material-symbols-outlined">
+                        mail
+                    </span>
+
+                    <span>
+                        enquiry@qosiseas.com
+                    </span>
+                </p>
+
+                <p>
+                    <span class="material-symbols-outlined">
+                        link
+                    </span>
+
+                    <a href="#">
+                        QOS ISEAS JV
+                    </a>
+                </p>
+            </div>
+       
+        <!--COLUMN 3: QUICK LINKS-->
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="expertise.html">Our Expertise</a></li>
+                <li><a href="safety.html">Safety & Quality</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!--COPYRIGHT-->
+    <div class="footer-bottom">
+        <p>
+           © 2026 QOS ISEAS JV. All Rights Reserved. 
+        </p>
+    </div>
+
+</footer>
+
+<script>
+    function toggleMenu() {
+        const navLinks = document.getElementById("navLinks");
+        const menuIcon = document.getElementById("menuIcon");
+
+        navLinks.classList.toggle("active");
+
+        if (navLinks.classList.contains("active")) {
+                menuIcon.textContent = "close";
+        } else {
+            menuIcon.textContent = "menu";
+        }
+    }
+</script>
+
+<script>
+const reveals = document.querySelectorAll(".reveal");
+
+window.addEventListener("scroll", () => {
+    reveals.forEach((element) => {
+        const top = element.getBoundingClientRect().top;
+
+        if(top < window.innerHeight - 100) {
+            element.classList.add("active");
+        }
+    });
+});
+
+</script>
+
+</body>
+</html>
