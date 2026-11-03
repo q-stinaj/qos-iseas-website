@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced NDT Inspection</title>
+
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/advancedNDT.css">
+    <link rel="icon" type="image/icon" href="../IMG/QI LOGO.png">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+</head>
+<body>
+
+<!--NAVIGATION BAR-->
+<nav class="navbar">
+
+        <div class="logo">
+            <img src="../IMG/QI LOGO.png">
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About Us</a></li>
+            <li><a href="../expertise.html">Our Expertise</a></li>
+            <li><a href="../safety.html">Safety & Quality</a></li>
+            <li><a href="../contact.html">Contact Us</a></li>
+        </ul>
+
+        <span class="material-symbols-outlined menu-icon" id="menuIcon"
+        onclick="toggleMenu()">
+            menu
+        </span>
+</nav>
+
+<!--BANNER-->
+<section class="advanced-banner">
+    <div class="advanced-content">
+        <h1>Advanced NDT Inspection</h1>
+        <p>Delivering Asset Integrity Excellence Through Advanced Inspection, Engineering, and Technical Assurance</p>
+    </div>
+</section>
+
+<div class="breadcrumb">
+    <a href="../index.html">Home</a>
+
+        <span>/</span>
+
+    <a href="../expertise.html">Our Expertise</a>
+
+        <span>/</span>
+                
+        <span>Diving Services</span>
+</div>
+
+<!--SERVICE METHODS-->
+<section class="service-methods">
+
+    <!--LEFT IMAGE-->
+    <div class="service-image">
+        <img src="../IMG/ADVNDT.jpg" alt="Advanced NDT Inspection">
+    </div>
+
+    <!--RIGHT CONTENT-->
+    <div class="service-details">
+
+        <div class="service-description">
+
+            <h2>Advanced NDT Inspection</h2>
+
+            <p>
+                To support more complex inspections, QOS Sdn. Bhd. utilizes advanced technologies such as Phased Array Ultrasonic Testing (PAUT), Time of Flight Diffraction (TOFD), 
+                Eddy Current Testing (ECT), Acoustic Emission Testing, and Corrosion Mapping techniques.
+                Advanced NDT is particularly critical in high-risk environments where precision and reliability are paramount, such as offshore facilities and aging infrastructure.
+            </p>
+        </div>
+
+        <div class="methods-title">
+            <p>Advanced NDT methods include:</p>
+        </div>
+
+        <div class="method-grid">
+            <div class="method-box">X-Ray Fluorescence (XRF)</div>
+            <div class="method-box">Alternating Current Field Measurement (ACFM)</div>
+            <div class="method-box">Vibration Testing Tools</div>
+            <div class="method-box">Vacuum Box Leak Testing</div>
+            <div class="method-box">Acoustic Emission for Passing Valve</div>
+            <div class="method-box">Acoustic Emission Testing (MMC)</div>
+            <div class="method-box">Ovality Testing for Pipes</div>
+            <div class="method-box">Robotic Inspection</div>
+            <div class="method-box">Automated or Robotic Corrosion Mapping</div>
+            <div class="method-box">Online Tank Inspection System</div>
+            <div class="method-box">Eddy Current Testing (ECT)</div>
+        </div>
+        
+    </div>
+</section>
+
+<!--FOOTER-->
+<footer class="footer">
+
+    <!--BG VIDEO-->
+    <video autoplay muted loop playsinline class="footer-video">
+        <source src="../IMG/FOOTER.mp4" type="video/mp4">
+    </video>
+
+    <!--OVERLAY-->
+    <div class="footer-overlay"></div>
+
+    <!--FOOTER CONTENT-->
+    <div class="footer-container">
+
+        <!--COLUMN 1: LOGO-->
+        <div class="footer-logo">
+            <img src="../IMG/QI LOGO.png" alt="Company Logo">
+        </div>
+        
+        <!--COLUMN 2: CONTACT INFO-->
+            <div class="footer-contact">
+                <p>
+                    <span class="material-symbols-outlined">
+                        location_on
+                    </span>
+
+                    <span>
+                        Block A, Unit 8,<br>
+                        Simpang 288, Jalan Rasau,<br>
+                        Sungai 7, Tanjong Rasau,<br>
+                        Kuala Belait, KA3331. 
+                    </span>
+                        
+                </p>
+
+                <p>
+                    <span class="material-symbols-outlined">
+                        mail
+                    </span>
+
+                    <span>
+                        enquiry@qosiseas.com
+                    </span>
+                </p>
+
+                <p>
+                    <span class="material-symbols-outlined">
+                        link
+                    </span>
+
+                    <a href="#">
+                        QOS ISEAS JV
+                    </a>
+                </p>
+            </div>
+       
+        <!--COLUMN 3: QUICK LINKS-->
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="expertise.html">Our Expertise</a></li>
+                <li><a href="safety.html">Safety & Quality</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!--COPYRIGHT-->
+    <div class="footer-bottom">
+        <p>
+           © 2026 QOS ISEAS JV. All Rights Reserved. 
+        </p>
+    </div>
+
+</footer>
+
+<script>
+        function toggleMenu() {
+            const navLinks = document.getElementById("navLinks");
+            const menuIcon = document.getElementById("menuIcon");
+
+            navLinks.classList.toggle("active");
+
+            if (navLinks.classList.contains("active")) {
+                menuIcon.textContent = "close";
+            } else {
+                menuIcon.textContent = "menu";
+            }
+        }
+    </script>
+
+</body>
+</html>

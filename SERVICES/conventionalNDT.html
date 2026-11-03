@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conventional NDT Inspection</title>
+
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/conventionalNDT.css">
+    <link rel="icon" type="image/icon" href="../IMG/QI LOGO.png">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+</head>
+<body>
+    
+<!--NAVIGATION BAR-->
+<nav class="navbar">
+
+        <div class="logo">
+            <img src="../IMG/QI LOGO.png">
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About Us</a></li>
+            <li><a href="../expertise.html">Our Expertise</a></li>
+            <li><a href="../safety.html">Safety & Quality</a></li>
+            <li><a href="../contact.html">Contact Us</a></li>
+        </ul>
+
+        <span class="material-symbols-outlined menu-icon" id="menuIcon"
+        onclick="toggleMenu()">
+            menu
+        </span>
+</nav>
+
+<!--BANNER-->
+<section class="conventional-banner">
+    <div class="conventional-content">
+        <h1>Conventional NDT Inspection</h1>
+        <p>Delivering Asset Integrity Excellence Through Advanced Inspection, Engineering, and Technical Assurance</p>
+    </div>
+</section>
+
+<div class="breadcrumb">
+    <a href="../index.html">Home</a>
+
+        <span>/</span>
+
+    <a href="../expertise.html">Our Expertise</a>
+
+        <span>/</span>
+                
+        <span>Diving Services</span>
+</div>
+
+<!--SERVICE METHODS-->
+<section class="service-methods">
+
+    <!--LEFT IMAGE-->
+    <div class="service-image">
+        <img src="../IMG/NDT.jpeg" alt="Conventional NDT Inspection">
+    </div>
+
+    <!--RIGHT CONTENT-->
+    <div class="service-details">
+
+        <div class="service-description">
+
+            <h2>Conventional NDT Inspection</h2>
+
+            <p>
+                Conventional NDT techniques form the foundation of routine inspection and quality control processes.
+                These include methods such as visual inspection, magnetic particle testing (MPI), penetrant testing (PT), ultrasonic testing (UT), and radiographic testing (RT).
+            </p>
+        </div>
+
+        <div class="methods-title">
+            <p>Conventional NDT methods include:</p>
+        </div>
+
+        <div class="method-grid">
+            <div class="method-box">Visual Inspection</div>
+            <div class="method-box">Magnetic Particle Inspection (MPI)</div>
+            <div class="method-box">Ultrasonic Thickness Gauge Testing (UTTG)</div>
+            <div class="method-box">Positive Material Identification (PMI)</div>
+            <div class="method-box">Ferrite Testing (FT)</div>
+            <div class="method-box">Penetrant Testing (PT)</div>
+            <div class="method-box">Ultrasonic Testing Flaw Detection (UT)</div>
+            <div class="method-box">Radiographic Testing-Gamma Ray (RT)</div>
+            <div class="method-box">Hardness Testing (HT)</div>
+            <div class="method-box">Eddy Current Testing (ECT)</div>
+        </div>
+        
+    </div>
+</section>
+
+
+<!--FOOTER-->
+<footer class="footer">
+
+    <!--BG VIDEO-->
+    <video autoplay muted loop playsinline class="footer-video">
+        <source src="../IMG/FOOTER.mp4" type="video/mp4">
+    </video>
+
+    <!--OVERLAY-->
+    <div class="footer-overlay"></div>
+
+    <!--FOOTER CONTENT-->
+    <div class="footer-container">
+
+        <!--COLUMN 1: LOGO-->
+        <div class="footer-logo">
+            <img src="../IMG/QI LOGO.png" alt="Company Logo">
+        </div>
+        
+        <!--COLUMN 2: CONTACT INFO-->
+            <div class="footer-contact">
+                <p>
+                    <span class="material-symbols-outlined">
+                        location_on
+                    </span>
+
+                    <span>
+                        Block A, Unit 8,<br>
+                        Simpang 288, Jalan Rasau,<br>
+                        Sungai 7, Tanjong Rasau,<br>
+                        Kuala Belait, KA3331. 
+                    </span>
+                        
+                </p>
+
+                <p>
+                    <span class="material-symbols-outlined">
+                        mail
+                    </span>
+
+                    <span>
+                        enquiry@qosiseas.com
+                    </span>
+                </p>
+
+                <p>
+                    <span class="material-symbols-outlined">
+                        link
+                    </span>
+
+                    <a href="#">
+                        QOS ISEAS JV
+                    </a>
+                </p>
+            </div>
+       
+        <!--COLUMN 3: QUICK LINKS-->
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="expertise.html">Our Expertise</a></li>
+                <li><a href="safety.html">Safety & Quality</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!--COPYRIGHT-->
+    <div class="footer-bottom">
+        <p>
+           © 2026 QOS ISEAS JV. All Rights Reserved. 
+        </p>
+    </div>
+
+</footer>
+
+<script>
+        function toggleMenu() {
+            const navLinks = document.getElementById("navLinks");
+            const menuIcon = document.getElementById("menuIcon");
+
+            navLinks.classList.toggle("active");
+
+            if (navLinks.classList.contains("active")) {
+                menuIcon.textContent = "close";
+            } else {
+                menuIcon.textContent = "menu";
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diving Services</title>
+
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/service.css">
+    <link rel="icon" type="image/icon" href="../IMG/QI LOGO.png">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+</head>
+
+<body>
+    
+<!--NAVIGATION BAR-->
+<nav class="navbar">
+
+        <div class="logo">
+            <img src="../IMG/QI LOGO.png">
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About Us</a></li>
+            <li><a href="../expertise.html">Our Expertise</a></li>
+            <li><a href="../safety.html">Safety & Quality</a></li>
+            <li><a href="../contact.html">Contact Us</a></li>
+        </ul>
+
+        <span class="material-symbols-outlined menu-icon" id="menuIcon"
+        onclick="toggleMenu()">
+            menu
+        </span>
+</nav>
+
+<!--BANNER-->
+<section class="divingservices-banner">
+    <div class="divingservices-content">
+        <h1>Diving Services</h1>
+        <p>Delivering Specialized Subsea Solutions with Precision, Safety, and Reliability</p>
+    </div>
+</section>
+
+<div class="breadcrumb">
+        <a href="../index.html">Home</a>
+
+            <span>/</span>
+
+        <a href="../expertise.html">Our Expertise</a>
+
+            <span>/</span>
+                
+        <span>Diving Services</span>
+</div>
+
+<!--DIVING SERVICES-->
+<section class="service-overview">
+
+    <div class="service-content">
+
+        <!--LEFT COLUMN-->
+        <div class="service-description">
+            <h2>Diving Solutions</h2>
+            <p>
+                ISEAS delivers expert commercial diving services to support a wide range of underwater operations, from inspection and maintenance to installation and repair. 
+                With competent, experienced personnel and advanced equipment, every project is executed with precision and strict adherence to safety standards.
+            </p>
+        </div>
+
+        <!--RIGHT COLUMN-->
+        <div class="service-capabilities">
+            <h3>Key Capabilities</h3>
+
+            <ul>
+                <li>Offshore diving operations for Oil & Gas infrastructure</li>
+                <li>Subsea Inspection, Repair, and Maintenance (IRM)</li>
+                <li>Pipeline, riser, and jacket installation support</li>
+                <li>Underwater welding, cutting, and construction works</li>
+                <li>Seabed surveys, dredging, and marine infrastructure support</li>
+                <li>Vessel inspection and ship husbandry services</li>
+            </ul>
+        </div>
+    </div>
+</section>    
+    
+
+
+<!--FOOTER-->
+<footer class="footer">
+
+    <!--BG VIDEO-->
+    <video autoplay muted loop playsinline class="footer-video">
+        <source src="../IMG/FOOTER.mp4" type="video/mp4">
+    </video>
+
+    <!--OVERLAY-->
+    <div class="footer-overlay"></div>
+
+    <!--FOOTER CONTENT-->
+    <div class="footer-container">
+
+        <!--COLUMN 1: LOGO-->
+        <div class="footer-logo">
+            <img src="../IMG/QI LOGO.png" alt="Company Logo">
+        </div>
+        
+        <!--COLUMN 2: CONTACT INFO-->
+            <div class="footer-contact">
+                <p>
+                    <span class="material-symbols-outlined">
+                        location_on
+                    </span>
+
+                    <span>
+                        Block A, Unit 8,<br>
+                        Simpang 288, Jalan Rasau,<br>
+                        Sungai 7, Tanjong Rasau,<br>
+                        Kuala Belait, KA3331. 
+                    </span>
+                        
+                </p>
+
+                <p>
+                    <span class="material-symbols-outlined">
+                        mail
+                    </span>
+
+                    <span>
+                        enquiry@qosiseas.com
+                    </span>
+                </p>
+
+                <p>
+                    <span class="material-symbols-outlined">
+                        link
+                    </span>
+
+                    <a href="#">
+                        QOS ISEAS JV
+                    </a>
+                </p>
+            </div>
+       
+        <!--COLUMN 3: QUICK LINKS-->
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="expertise.html">Our Expertise</a></li>
+                <li><a href="safety.html">Safety & Quality</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!--COPYRIGHT-->
+    <div class="footer-bottom">
+        <p>
+           © 2026 QOS ISEAS JV. All Rights Reserved. 
+        </p>
+    </div>
+
+</footer>
+
+<script>
+        function toggleMenu() {
+            const navLinks = document.getElementById("navLinks");
+            const menuIcon = document.getElementById("menuIcon");
+
+            navLinks.classList.toggle("active");
+
+            if (navLinks.classList.contains("active")) {
+                menuIcon.textContent = "close";
+            } else {
+                menuIcon.textContent = "menu";
+            }
+        }
+    </script>
+
+</body>
+</html>
