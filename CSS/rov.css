@@ -1,0 +1,121 @@
+.rov-banner {
+    height: 80vh;
+    background-image: linear-gradient(rgba(248, 247, 247, 0.342), rgba(0, 0, 0, 0.658)), url("../IMG/DIV3.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    padding-left: 50px;
+    
+}
+.rov-content {
+    color: rgb(252, 252, 252);
+    padding-top: 200px;
+}
+.rov-content h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 5px;
+}
+.rov-content p {
+    font-size: 1.1rem;
+}
+
+/*ROV SERVICES*/
+.rov-services {
+    padding: 10px 7%;
+}
+.rov-grid {
+    display: grid;
+    grid-template-columns: 55% 40%;
+    gap: 60px;
+    align-items: start;
+}
+.rov-description h2 {
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    color: #1a326a;
+    margin-bottom: 25px;
+}
+.rov-description p {
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+.rov-capabilities {
+    background: #e9e9e956;
+    padding: 20px 50px;
+    border-left: 2px solid #1a326a;
+    transition: 0.3s ease;
+    margin-bottom: 50px;
+}
+.rov-capabilities:hover {
+    transform: translateX(5px);
+}
+.rov-capabilities h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.rov-capabilities ul {
+    padding-left: 20px;
+}
+.rov-capabilities li {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+.rov-image {
+    display: flex;
+    justify-content: left;
+}
+.rov-image img {
+    width: 100%;
+    max-width: 700px;
+    height: 400px;
+    object-fit: cover;
+    transition: 0.3s ease;
+}
+.rov-image img:hover {
+    transform: translateX(5px);
+}
+
+@media (max-width: 768px) {
+    /*BANNER*/
+    .rov-banner {
+        height: 50vh;
+        padding: 0 20px;
+        justify-content: center;
+        text-align: center;
+    }
+    .rov-content {
+        padding-top: 80px;
+    }
+    .rov-content h1 {
+        font-size: 2rem;
+    }
+    .rov-content p {
+        font-size: 1rem;
+    }
+
+    /*ROV SERVICES*/
+    .rov-description h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    .rov-description p{
+        font-size: 1rem;
+        line-height: 1.8;
+        margin-bottom: 30px;
+        text-align: justify;
+    }
+    .diving-equipment {
+        padding: 60px 5%;
+    }
+    .equipment-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-bottom: 80px;
+    }
+    .equipment-card img {
+        height: 500px;
+        object-fit: cover;
+    }
+}

@@ -1,0 +1,127 @@
+/*BANNER*/
+.conventional-banner {
+    height: 80vh;
+    background-image: linear-gradient(rgba(247, 244, 244, 0.425), rgba(19, 18, 18, 0.781)), url("../IMG/NDT2.jpeg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    padding-left: 50px;
+}
+.conventional-content {
+    color: rgb(252, 252, 252);
+    padding-top: 200px;
+}
+.conventional-content h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 5px;
+}
+.conventional-content p {
+    font-size: 1.1rem;
+}
+
+/*SERVICE METHODS*/
+.service-methods {
+    padding: 20px 7%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 40px;
+    align-items: start;
+    margin-bottom: 90px
+}
+.service-image img {
+    width: 100%;
+    height: clamp(350px, 60vw, 700px);
+    object-fit: cover;
+}
+.service-description {
+    margin-bottom: 30px;
+}
+.service-description h2 {
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    color: #1a326a;
+    margin-bottom: 10px;
+}
+.service-description p {
+    line-height: 1.8;
+    text-align: justify;
+}
+.methods-title {
+    margin-bottom: 25px;
+}
+.methods-title p {
+    font-size: 1rem;
+}
+.method-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.method-box {
+    background: #e0e0e0;
+    border: 1.5px solid #3e3f3f;
+    padding: 16px;
+    text-align: center;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+.method-box:hover {
+    background: #1a326a;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    /*BANNER*/
+    .conventional-banner {
+        height: 50vh;
+        padding: 0 20px;
+        justify-content: center;
+        text-align: center;
+    }
+    .conventional-content {
+        padding-top: 80px;
+    }
+    .conventional-content h1 {
+        font-size: 2rem;
+    }
+    .conventional-content p {
+        font-size: 1rem;
+    }
+    .service-methods {
+        padding: 60px 5%;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .service-image img {
+        width: 100%;
+        height: 680px;
+        object-fit: cover;
+    }
+    .service-description {
+        margin-bottom: 20px;
+    }
+    .service-description h2 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+    .service-description p {
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+    .methods-title {
+        margin-bottom: 20px;
+    }
+    .methods-title p {
+        font-size: 0.95rem;
+    }
+    .method-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    .method-box {
+        padding: 14px;
+        font-size: 0.95rem;
+    }
+}

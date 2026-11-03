@@ -1,0 +1,240 @@
+.about-banner {
+    height: 80vh;
+    background-image: linear-gradient(rgba(248, 247, 247, 0.342), rgba(0, 0, 0, 0.658)), url("../IMG/ABOUT.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    padding-left: 50px;
+    
+}
+.about-banner-content {
+    color: rgb(252, 252, 252);
+    padding-top: 200px;
+}
+.about-banner-content h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 5px;
+}
+.about-banner-content p {
+    font-size: 1.1rem;
+}
+
+/*ABOUT US*/
+.about-us {
+    padding: 100px 5%;
+}
+.section-title h2 {
+    font-size: 2.7rem;
+    color: #1a326a;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+.section-title .divider {
+    width: 48%;
+    height: 2px;
+    background-color: #1c1c1d;
+    margin-bottom: 50px;
+}
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+.about-image img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+.about-description {
+    margin-bottom: 50px;
+}
+.about-description p {
+    font-size: clamp(1rem, 2vw, 1.3rem);
+    line-height: 1.5;
+    text-align: justify;
+}
+.mission-vision {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+.info-box {
+    padding: 30px;
+    background: #faf9f9;
+    border: 2px solid #1a326a;
+    transition: all 0.3s ease;
+}
+.info-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+.info-box h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+.info-box p {
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/*EXPLORE MORE*/
+.explore-more {
+    padding: 100px 5%;
+    background: #f6f6fa;
+}
+.company-card {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    align-items: center;
+    gap: 50px;
+    background: #ffffff;
+    padding: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+.company-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+.company-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.company-logo img {
+    width: 200px;
+    height: auto;
+}
+.company-content h3 {
+    font-size: clamp(1.3rem, 2vw, 1.8rem);
+    color: #1a326a;
+    margin-bottom: 15px;
+}
+.company-content p {
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+.company-btn {
+    display: inline-block;
+    background: hsl(0, 0%, 4%);
+    border: 2px solid rgba(0,0,0,0.1);
+    color: white;
+    padding: 12px 28px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+.company-btn:hover {
+    background: white;
+    color: hsl(0, 0%, 4%);
+    border: 2px solid #1a326a;
+}
+
+@media (max-width: 768px) {
+
+    /*ABOUT BANNER*/
+    .about-banner {
+        height: 50vh;
+        padding: 0 20px;
+        justify-content: center;
+        text-align: center;
+    }
+    .about-banner-content {
+        padding-top: 80px;
+    }
+    .about-banner-content h1 {
+        font-size: 2rem;
+    }
+    .about-banner-content p {
+        font-size: 1rem;
+    }
+
+    /*ABOUT US*/
+    .about-us {
+        padding: 60px 5%;
+    }
+    .section-title h2 {
+        font-size: 2rem;
+    }
+    .section-title .divider {
+        margin-bottom: 30px;
+    }
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .about-image {
+        display: flex;
+        justify-content: center;
+    }
+    .about-description {
+        margin-bottom: 30px;
+    }
+    .about-description p {
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+
+    /*MISSION & VISION*/
+    .mission-vision {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .info-box {
+        padding: 25px;
+    }
+    .info-box h3 {
+        font-size: 1.2rem;
+    }
+    .info-box p {
+        font-size: 0.95rem;
+    }
+
+    /*EXPLORE MORE*/
+    .explore-more {
+        padding: 60px 5%;
+    }
+    .company-card {
+        grid-template-columns: 1fr;
+        text-align: justify;
+        gap: 25px;
+        padding: 30px;
+    }
+    .company-logo img {
+        width: 150px;
+    }
+    .company-content h3 {
+        font-size: 1.4rem;
+    }
+    .company-content p {
+        font-size: 0.95rem;
+        line-height: 1.8;
+    }
+    .company-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+    .nav-links {
+        display: none;
+    }
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(255,255,255,0.95);
+        backdrop-filter: blur(5px);
+        padding: 20px;
+        gap: 20px;
+    }
+}

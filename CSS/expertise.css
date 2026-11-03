@@ -1,0 +1,180 @@
+/*BANNER*/
+.expertise-banner {
+    height: 80vh;
+    background-image: linear-gradient(rgba(247, 244, 244, 0.281), rgba(22, 22, 22, 0.781)), url("../IMG/10FT\ CON\ FRONT\ SIDE.jpeg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    padding-left: 50px;
+}
+.expertise-banner-content {
+    color: rgb(252, 252, 252);
+    padding-top: 200px;
+}
+.expertise-banner-content h1 {
+    font-size: 3rem;
+    margin-bottom: 5px;
+}
+.expertise-banner-content p {
+    font-size: 1.1rem;
+}
+
+/*EXPERTISE INTRO*/
+.expertise-intro {
+    position: relative;
+    min-height: 40vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: justify;
+}
+.intro-overlay {
+    position: absolute;
+    inset: 0;
+    background: #1a326a;
+}
+.intro-content {
+    position: relative;
+    z-index: 2;
+    padding: 0 70px;
+}
+.intro-content p {
+    line-height: 1.8;
+    font-size: 1.1rem;
+    text-align: justify;
+    color: white;
+}
+
+/*SERVICES CAROUSEL*/
+.section-title h2 {
+    font-size: 2.7rem;
+    color: #1a326a;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+.services {
+    padding: 90px 5%;
+}
+.services-slider {
+    display: flex;
+    gap: 25px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 15px;
+    scrollbar-width: thin;
+}
+.services-card {
+    min-width: 350px;
+    height: 450px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.services-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    transition: 0.3s ease;
+}
+.services-card h3 {
+    position: relative;
+    z-index: 2;
+    color: white;
+    font-size: 1.8rem;
+    padding: 0 20px;
+    font-weight: 400;
+}
+.services-card:hover {
+    transform: translateY(-8px);
+}
+.services-card:hover:before {
+    background: rgba(0,0,0,0.25);
+}
+.service-1 {
+    background-image: url("../IMG/DIVING.jpg");
+}
+.service-2 {
+    background-image: url("../IMG/10FT\ CON\ FRONT\ SIDE.jpeg");
+}
+.service-3 {
+    background-image: url("../IMG/ROV.jpeg");
+}
+.service-4 {
+    background-image: url("../IMG/NDT.jpeg");
+}
+.service-5 {
+    background-image: url("../IMG/ADVANCED\ NDT.jpg");
+}
+.service-6 {
+    background-image: url("../IMG/MECHANICAL.jpeg");
+}
+
+@media (max-width: 768px) {
+    /*BANNER*/
+    .expertise-banner {
+        height: 50vh;
+        padding: 0 20px;
+        justify-content: center;
+        text-align: center;
+    }
+    .expertise-banner-content {
+        padding-top: 80px;
+    }
+    .expertise-banner-content h1 {
+        font-size: 2rem;
+    }
+    .expertise-banner-content p {
+        font-size: 1rem;
+    }
+
+    /*EXPERTISE INTRO*/
+    .expertise-intro {
+        min-height: auto;
+        padding: 50px 0;
+        text-align: left;
+    }
+    .intro-content {
+        padding: 0 25px;
+    }
+    .intro-content p {
+        font-size: 1rem;
+        line-height: 1.8;
+        text-align: justify;
+    }
+
+    /*SERVICES*/
+    .section-title h2{
+        font-size: 2rem;
+    }
+    .services {
+        padding: 60px 5%;
+    }
+    .services-slider {
+        gap: 15px;
+        scroll-snap-type: x mandatory;
+        padding-bottom: 10px;
+    }
+    .services-card {
+        min-width: 280px;
+        height: 350px;
+        scroll-snap-stop: center;
+    }
+    .services-card h3 {
+        font-size: 1.4rem;
+        padding: 0 15px;
+    }
+}

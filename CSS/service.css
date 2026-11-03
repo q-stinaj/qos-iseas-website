@@ -1,0 +1,142 @@
+/*BANNER*/
+.divingservices-banner {
+    height: 80vh;
+    background-image: linear-gradient(rgba(247, 244, 244, 0.281), rgba(22, 22, 22, 0.781)), url("../IMG/DIVINGSERVICES.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    padding-left: 50px;
+}
+.divingservices-content {
+    color: rgb(252, 252, 252);
+    padding-top: 200px;
+}
+.divingservices-content h1 {
+    font-size: 3rem;
+    margin-bottom: 5px;
+}
+.divingservices-content p {
+    font-size: 1.1rem;
+}
+
+/*DIVING SERVICES*/
+.service-overview {
+    padding: 30px 7%;
+}
+.service-content {
+    display: grid;
+    grid-template-columns: 55% 40%;
+    gap: 60px;
+    align-items: start;
+}
+.service-description h2 {
+    font-size: 2.5rem;
+    color: #1a326a;
+    margin-bottom: 25px;
+}
+.service-description p {
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+.service-capabilities {
+    background: #e9e9e956;
+    padding: 20px 50px;
+    border-left: 2px solid #1a326a;
+    transition: 0.3s ease;
+    margin-bottom: 100px;
+}
+.service-capabilities:hover {
+    transform: translateX(5px);
+}
+.service-capabilities h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.service-capabilities ul {
+    padding-left: 20px;
+}
+.service-capabilities li {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/*BREADCRUMB*/
+.breadcrumb {
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+.breadcrumb a {
+    color: rgba(34, 32, 32, 0.8);
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+.breadcrumb span {
+    color:#1d1c1c;
+    margin: 0 5px;
+}
+.breadcrumb a:hover {
+    color: #1a326a;
+}
+
+@media (max-width: 768px) {
+    /*BANNER*/
+    .divingservices-banner {
+        height: 50vh;
+        padding: 0 20px;
+        justify-content: center;
+        text-align: center;
+    }
+    .divingservices-content {
+        padding-top: 80px;
+    }
+    .divingservices-content h1 {
+        font-size: 2rem;
+    }
+    .divingservices-content p {
+        font-size: 1rem;
+    }
+
+    /*SERVICE OVERVIEW*/
+    .service-overview {
+        padding: 60px 5%;
+    }
+    .service-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .service-description h2 {
+        font-size: 2rem;
+    }
+    .service-description p {
+        font-size: 1rem;
+        line-height: 1.8;
+        text-align: justify;
+    }
+
+    /*CAPABILITIES BOX*/
+    .service-capabilities {
+        padding: 25px;
+        border-left: none;
+        border-top: 2px solid #1a326a;
+    }
+    .service-capabilities:hover {
+        transform: none;
+    }
+    .service-capabilities h3 {
+        font-size: 1.3rem;
+    }
+    .service-capabilities ul {
+        padding-left: 18px;
+    }
+    .service-capabilities li {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 12px;
+    }
+
+
+
+}

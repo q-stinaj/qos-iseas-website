@@ -1,0 +1,121 @@
+/*BANNER*/
+.divingeqt-banner {
+    height: 80vh;
+    background-image: linear-gradient(rgba(247, 244, 244, 0.281), rgba(22, 22, 22, 0.781)), url("../IMG/10FT\ CON\ PANEL\ FRONT.jpeg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    padding-left: 50px;
+}
+.divingeqt-content {
+    color: rgb(252, 252, 252);
+    padding-top: 200px;
+}
+.divingeqt-content h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 5px;
+}
+.divingeqt-content p {
+    font-size: 1.1rem;
+}
+
+.service-description h2 {
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    color: #1a326a;
+    margin-bottom: 25px;
+}
+.service-description p {
+    line-height: 1.7;
+    font-size: 1.05rem;
+    margin-bottom: 50px;
+}
+
+/*DIVING EQT*/
+.diving-equipment {
+    padding: 30px 7%;
+}
+.equipment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 200px;
+}
+.equipment-card img {
+    width: 100%;
+    height: clamp(220px, 30vw, 250px);
+    object-fit: cover;
+}
+.equipment-card {
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+.equipment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15)
+}
+
+/*BREADCRUMB*/
+.breadcrumb {
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+.breadcrumb a {
+    color: rgba(34, 32, 32, 0.8);
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+.breadcrumb span {
+    color:#1d1c1c;
+    margin: 0 5px;
+}
+.breadcrumb a:hover {
+    color: #1a326a;
+}
+
+@media (max-width: 768px) {
+    /*BANNER*/
+    .divingeqt-banner {
+        height: 50vh;
+        padding: 0 20px;
+        justify-content: center;
+        text-align: center;
+    }
+    .divingeqt-content {
+        padding-top: 80px;
+    }
+    .divingeqt-content h1 {
+        font-size: 2rem;
+    }
+    .divingeqt-content p {
+        font-size: 1rem;
+    }
+
+    /*DIVING EQUIPMENT*/
+    .service-description h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    .service-description p{
+        font-size: 1rem;
+        line-height: 1.8;
+        margin-bottom: 30px;
+        text-align: justify;
+    }
+    .diving-equipment {
+        padding: 60px 5%;
+    }
+    .equipment-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-bottom: 80px;
+    }
+    .equipment-card img {
+        height: 500px;
+        object-fit: cover;
+    }
+}
